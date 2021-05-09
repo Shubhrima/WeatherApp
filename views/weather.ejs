@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/58e0adaea0.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+	
+	
+  <br>
+  <h1 align="center"><%= name %></h1>
+  <br>
+	<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+         <div class="card" style="width: 25rem;">
+          <div class="card-body">
+            <h2 align="center" class="card-title"><%= temperature %><sup>o</sup>C</h2>
+            <img style="margin: 2% 38%" src= <%= icon %>>
+            <h4 align="center" id='weatherDescription'> <%= weatherDescription %></h4>
+            <br>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <h6 align="center"><%= min %><sup>o</sup>C</h6>
+                </div>
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                  <h6 align="center"><%= max %><sup>o</sup>C</h6>
+                </div>
+              </div>
+            </div>
+            <p align="center">Humidity : <%= humidity %></p>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <h6 align="center"><i class="fas fa-sun" style="font-size: 3em; color: Tomato;"></i></h6>
+                  <h6><%=sunrise%></h6>
+                </div>
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                  <h6 align="center"><i class="fas fa-moon" style="font-size: 3em; color: gray;"></i></h6>
+                  <h6><%=sunset%></h6>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</div>
+</body>
+</html>
